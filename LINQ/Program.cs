@@ -4,7 +4,15 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string[] videoGames = {"Jak and Dextar", "Rachet and Clank", "Call of Duty", "League of Legends", "Mario"};
+
+            var sortedGames = videoGames.OrderBy(game => game.Length).ToArray();
+
+            foreach (var game in sortedGames)
+            {
+                Console.WriteLine(game);
+            }
+
         }
     }
 }
